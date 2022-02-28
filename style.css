@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    padding:0;
+}
+h3{
+    font-size:50px;
+}
+.body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.con{
+    width:100%;
+    margin:0 auto;
+}
+.cell{
+    float:left;
+}
+.cell-r{
+    float:right;
+}
+.row::after{
+    display: block;
+    clear: both;
+    content:"";
+}
+
+/* 일상을 여는 새로운 시작, 네이버 웨일 */
+.first-main-background{
+    position:relative;
+    height:720px;
+    background-image: url(https://whale.naver.com/_resource/img/main/top_bg.jpg);
+}
+.first-main-background > .content{
+    position:absolute;
+    left:3%;
+    top:50%;
+    transform:translateY(-50%);
+}
+.first-main-background > .small-background{
+    width:auto;
+    height:100%
+}
+
+/* 오늘 해야 할 일을 더욱 빠르고 가볍게 */
+.second-main-background{
+    height:650px;
+    background-image: url(https://whale.naver.com/_resource/img/main/tasking_bg.jpg);
+}
+.slider-box{
+    position:relative;
+    width:100%;
+    height:100%;
+}
+.content-left{
+    height:100%;
+    width:45%;
+}
+.content-left>.content-left__inner{
+    position:absolute;
+    top:50%;
+    left:3%;
+    transform:translateY(-50%);
+}
+.content-right{
+    height:100%;
+    width:55%;
+}
+.content-right>.content-right__inner{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+}
+.content-right>.content-right__inner>img{
+    width:70%;
+    display:block;
+    margin:0 auto;
+    border-radius:15px;
+}
