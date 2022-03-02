@@ -1,79 +1,207 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-h3{
-    font-size:50px;
+h3 {
+  font-size: 50px;
 }
-.body{
-    font-family: 'Noto Sans KR', sans-serif;
+body {
+    margin-top:100px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
-.con{
+.con {
+  width: 100%;
+  margin: 0 auto;
+}
+.cell {
+  float: left;
+}
+.cell-r {
+  float: right;
+}
+.row::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+/* 네비게이션바 시작*/
+ul,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.navbar-wrap {
     width:100%;
-    margin:0 auto;
+  position: fixed;
+  top:0px;
+  background-color: white;
+  z-index:5;
 }
-.cell{
-    float:left;
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  -webkit-box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.1);
+  /* 왜 적용안되는지? */
 }
-.cell-r{
-    float:right;
+.navbar > .logo {
+  width: 200px;
+  height: 100px;
+  margin-left:20px;
+  box-sizing: border-box;
+  line-height: 110px;
 }
-.row::after{
-    display: block;
-    clear: both;
-    content:"";
+.navbar > .menu {
+  width: 80%;
 }
+.navbar > .menu > ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align:center;
+  line-height: 100px;
+}
+.navbar > .menu > ul > li {
+  width: 13%;
+  /*   margin-right:20px; */
+  font-size: 20px;
+  background-color: pink;
+  font-weight:bold;
+}
+.navbar > .button {
+  width: 150px;
+  line-height: 100px;
+}
+.navbar > .button > a {
+  color: #15c5aa;
+  font-size: 20px;
+  border: 1px solid #15c5aa;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.sub-navbar {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  background: blue;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.sub-navbar.active {
+  max-height: 200px;
+}
+.sub-navbar > .blankbox01 {
+  width: 200px;
+  background: pink;
+}
+.sub-navbar > .blankbox02 {
+  width: 150px;
+  background: red;
+}
+.sub-navbar > .menu {
+  display: flex;
+  font-size: 20px;
+  width: 70%;
+}
+.sub-navbar > .menu > ul {
+  width: 13%;
+}
+/* 네비게이션바 끝 */
+
+
+
+
+
+
 
 /* 일상을 여는 새로운 시작, 네이버 웨일 */
-.first-main-background{
-    position:relative;
-    height:720px;
-    background-image: url(https://whale.naver.com/_resource/img/main/top_bg.jpg);
+.first-main-background {
+  position: relative;
+  height: 720px;
+  background-image: url(https://whale.naver.com/_resource/img/main/top_bg.jpg);
 }
-.first-main-background > .content{
-    position:absolute;
-    left:3%;
-    top:50%;
-    transform:translateY(-50%);
+.first-main-background > .content {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.first-main-background > .small-background{
-    width:auto;
-    height:100%
+.first-main-background > .small-background {
+  width: auto;
+  height: 100%;
 }
 
 /* 오늘 해야 할 일을 더욱 빠르고 가볍게 */
-.second-main-background{
-    height:650px;
-    background-image: url(https://whale.naver.com/_resource/img/main/tasking_bg.jpg);
+.second-main-background {
+  height: 650px;
+  background-image: url(https://whale.naver.com/_resource/img/main/tasking_bg.jpg);
 }
-.slider-box{
-    position:relative;
-    width:100%;
-    height:100%;
+
+.slider-box {
+  height: 650px;
 }
-.content-left{
-    height:100%;
-    width:45%;
+.slider-box .content {
+  width: 100%;
 }
-.content-left>.content-left__inner{
-    position:absolute;
-    top:50%;
-    left:3%;
-    transform:translateY(-50%);
+.slider-box > .slick-list {
+  height: 100%;
 }
-.content-right{
-    height:100%;
-    width:55%;
+.slider-box > .slick-list > .slick-track {
+  height: 100%;
+  position: relative;
 }
-.content-right>.content-right__inner{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
+.slider-box .content > .text-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: red; */
+  /* left 안되는 이유? margin-left로 대체 */
+  margin-left:100px;
 }
-.content-right>.content-right__inner>img{
+.slider-box .content > .img-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /* background-color: red; */
+  /* left 안되는 이유? */
+}
+.slider-box .content > .img-box>img{
     width:70%;
-    display:block;
+    border-radius:25px;
+    margin-right:100px;
+}
+
+.footer{
+    width:100%;
+    height:450px;
+    position:relative;
+}
+.footer>.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+
+.footer>.content>img{
+    width:70%
+}
+.footer>.content>div{
+    width:200px;
+    padding:20px 10px;
+    background-color:#15c5aa;
+    border-radius:20px;
     margin:0 auto;
-    border-radius:15px;
 }
