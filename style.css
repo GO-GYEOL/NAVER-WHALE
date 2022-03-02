@@ -182,12 +182,29 @@ a {
     margin-right:100px;
 }
 
-.footer{
+/* third */
+.third-main-background {
+  height: 650px;
+  background-image: url(https://whale.naver.com/_resource/img/main/security_bg.jpg);
+}
+
+/* fourth */
+.fourth-main-background {
+  height: 650px;
+  background-image: url(https://whale.naver.com/_resource/img/main/interface_bg.jpg);
+}
+
+
+
+
+
+/* footer */
+.last-main-background{
     width:100%;
     height:450px;
     position:relative;
 }
-.footer>.content{
+.last-main-background>.content{
     position:absolute;
     top:50%;
     left:50%;
@@ -195,13 +212,47 @@ a {
     text-align: center;
 }
 
-.footer>.content>img{
+.last-main-background>.content>img{
     width:70%
 }
-.footer>.content>div{
+.last-main-background>.content>div{
     width:200px;
     padding:20px 10px;
     background-color:#15c5aa;
     border-radius:20px;
     margin:0 auto;
+}
+
+.footer{
+  width:100%;
+  height:300px;
+  background-color: #eee;
+}
+.footer>.whale-logo{
+  width:175px;
+  padding-top:70px;
+  padding-bottom:50px;
+  margin:0 auto;
+}
+.footer>.item-box{
+  width:80%;
+  margin:0 auto;
+  display:flex;
+  justify-content: space-evenly;
+}
+.footer>.item-box>li{
+  position:relative;
+}
+.footer>.item-box>li::after{
+  content:'';
+  display:block;
+  position:absolute;
+  top:3px;
+  right:-30px;
+  width:1px;
+  height:18px;
+  background:#dadada;
+}
+.footer>.item-box>li:last-child::after{
+  display:none;
 }
