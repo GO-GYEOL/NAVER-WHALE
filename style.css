@@ -6,7 +6,7 @@ h3 {
   font-size: 55px;
 }
 body {
-    margin-top:100px;
+  margin-top:100px;
   font-family: "Noto Sans KR", sans-serif;
 }
 /* font-weight 적용 왜안되는지? */
@@ -129,7 +129,7 @@ a {
 /* 일상을 여는 새로운 시작, 네이버 웨일 */
 .first-main-background {
   position: relative;
-  height: 720px;
+  height: calc( 100vh - 100px );
   background-image: url(https://whale.naver.com/_resource/img/main/top_bg.jpg);
 }
 .first-main-background > .content {
@@ -138,6 +138,24 @@ a {
   top: 50%;
   transform: translateY(-50%);
 }
+.first-main-background > .content > h3 > b{
+  color:#05d7b4
+}
+.first-main-background > .content > .button{
+  width:250px;
+  height:75px;
+  background-color:#05d7b4;
+  color:white;
+  border-radius:50px;
+  margin-top:50px;
+  font-size:24px;
+  text-align: center;
+  line-height: 75px;
+}
+.first-main-background > .content > .button> img{
+  position:relative;
+  top:6px;
+}
 .first-main-background > .small-background {
   width: auto;
   height: 100%;
@@ -145,12 +163,12 @@ a {
 
 /* 오늘 해야 할 일을 더욱 빠르고 가볍게 */
 .second-main-background {
-  height: 650px;
+  height: calc( 100vh - 100px );
   background-image: url(https://whale.naver.com/_resource/img/main/tasking_bg.jpg);
 }
 
 .slider-box {
-  height: 650px;
+  height: calc( 100vh - 100px );
 }
 .slider-box .content {
   width: 100%;
@@ -171,13 +189,16 @@ a {
   /* left 안되는 이유? margin-left로 대체 */
   margin-left:50px;
 }
-.second-main-background>.slider-box .content > .text-box p{
+.slider-box .content > .text-box p{
   display:inline-block;
   background-color:white;
-  color:#00b7bc;
   padding-left:10px;
   padding-right:10px;
 }
+.second-main-background>.slider-box .content > .text-box p{
+  color:#00b7bc;
+}
+
 .slider-box .content > .text-box h2{
   color:rgb(255,255,255,0.8);
 }
@@ -196,14 +217,19 @@ a {
 
 /* third */
 .third-main-background {
-  height: 650px;
+  height: calc( 100vh - 100px );
   background-image: url(https://whale.naver.com/_resource/img/main/security_bg.jpg);
 }
-
+.third-main-background>.slider-box .content > .text-box p{
+  color:#058dec;
+}
 /* fourth */
 .fourth-main-background {
-  height: 650px;
+  height: calc( 100vh - 100px );
   background-image: url(https://whale.naver.com/_resource/img/main/interface_bg.jpg);
+}
+.fourth-main-background>.slider-box .content > .text-box p{
+  color:#454ccd;
 }
 
 
