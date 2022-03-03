@@ -3,7 +3,7 @@
   padding: 0;
 }
 h3 {
-  font-size: 50px;
+  font-size: 55px;
 }
 body {
     margin-top:100px;
@@ -37,7 +37,7 @@ a {
   text-decoration: none;
 }
 .navbar-wrap {
-    width:100%;
+  width:100%;
   position: fixed;
   top:0px;
   background-color: white;
@@ -154,6 +154,7 @@ a {
 }
 .slider-box .content {
   width: 100%;
+  color:white;
 }
 .slider-box > .slick-list {
   height: 100%;
@@ -168,7 +169,17 @@ a {
   transform: translateY(-50%);
   /* background-color: red; */
   /* left 안되는 이유? margin-left로 대체 */
-  margin-left:100px;
+  margin-left:50px;
+}
+.second-main-background>.slider-box .content > .text-box p{
+  display:inline-block;
+  background-color:white;
+  color:#00b7bc;
+  padding-left:10px;
+  padding-right:10px;
+}
+.slider-box .content > .text-box h2{
+  color:rgb(255,255,255,0.8);
 }
 .slider-box .content > .img-box {
   position: absolute;
