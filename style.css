@@ -60,7 +60,8 @@ a {
   line-height: 110px;
 }
 .navbar > .menu {
-  width: 80%;
+  width: 70%;
+  /* background:cyan; */
 }
 .navbar > .menu > ul {
   display: flex;
@@ -71,8 +72,8 @@ a {
 .navbar > .menu > ul > li {
   width: 13%;
   /*   margin-right:20px; */
-  font-size: 20px;
-  background-color: pink;
+  font-size: 18px;
+  /* background-color: pink; */
   font-weight:bold;
 }
 .navbar > .button {
@@ -94,7 +95,7 @@ a {
   z-index: 3;
   display: flex;
   justify-content: space-between;
-  background: blue;
+  background: white;
   max-height: 0;
   overflow: hidden;
   transition: 1s;
@@ -104,19 +105,27 @@ a {
 }
 .sub-navbar > .blankbox01 {
   width: 200px;
-  background: pink;
+  margin-left:20px;
+  /* background: pink; */
 }
 .sub-navbar > .blankbox02 {
   width: 150px;
-  background: red;
+  /* background: red; */
 }
 .sub-navbar > .menu {
   display: flex;
-  font-size: 20px;
+  justify-content: space-evenly;
+  font-size: 16px;
   width: 70%;
+  /* background-color:cyan */
 }
 .sub-navbar > .menu > ul {
   width: 13%;
+  text-align:center;
+  padding:10px;
+}
+.sub-navbar > .menu > ul > li{
+  padding:7px;
 }
 /* 네비게이션바 끝 */
 
