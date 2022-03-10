@@ -62,6 +62,7 @@ a {
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.1);
   /* 왜 적용안되는지? */
   position: relative;
+  overflow:hidden;
 }
 
 .navbar>.logo {
