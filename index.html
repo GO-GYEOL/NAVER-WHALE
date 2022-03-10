@@ -1,123 +1,99 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- 제이쿼리 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- 슬릭 -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
-      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
-    />
-    <!-- 폰트어썸 -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- css,js -->
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <!-- 네비게이션바 시작 -->
-    <div class="navbar-wrap">
-      <div class="navbar">
-        <div class="logo">
-          <img
-            src="https://whale.naver.com/_resource/img/main/logo_whale.svg"
-          />
-        </div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Why We Whale</a></li>
-            <li><a href="#">가이드</a></li>
-            <li><a href="#">스토어</a></li>
-            <li><a href="#">연구소</a></li>
-            <li><a href="#">웨일 스페이스</a></li>
-            <li><a href="#">웨일북</a></li>
-          </ul>
-        </div>
-        <div class="button">
-          <a href="#">다운로드</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- 슬릭 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <!-- 폰트어썸 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet" />
+  <!-- css,js -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <!-- 네비게이션바 시작 -->
+  <div class="navbar-wrap">
+    <div class="navbar">
+      <div class="logo">
+        <img src="https://whale.naver.com/_resource/img/main/logo_whale.svg" />
       </div>
-      <div class="sub-navbar">
-        <div class="blankbox01"></div>
-        <div class="menu">
-          <ul>
-            <li><a href="#">Brand Story</a></li>
-            <li><a href="#">주요 기능</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">What's New</a></li>
-            <li><a href="#">웨일 이용가이드</a></li>
-            <li><a href="#">마이 액티비티</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">확장앱</a></li>
-            <li><a href="#">배경테마</a></li>
-            <li><a href="#">개발자센터</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">연구소 홈</a></li>
-            <li><a href="#">베스트 연구</a></li>
-            <li><a href="#">버그바운티</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">제품 소개</a></li>
-            <li><a href="#">기능</a></li>
-            <li><a href="#">제휴 서비스</a></li>
-          </ul>
-          <ul>
-            <li><a href="#">웨일북 소개</a></li>
-            <li><a href="#">웨일 OS</a></li>
-            <li><a href="#">디바이스 정보</a></li>
-          </ul>
-        </div>
-        <div class="blankbox02"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Why We Whale</a></li>
+          <li><a href="#">가이드</a></li>
+          <li><a href="#">스토어</a></li>
+          <li><a href="#">연구소</a></li>
+          <li><a href="#">웨일 스페이스</a></li>
+          <li><a href="#">웨일북</a></li>
+        </ul>
+      </div>
+      <div class="button">
+        <a href="#">다운로드</a>
       </div>
     </div>
-    <div class="download-btn"><a href="#">다운로드</a></div>
-    
-    <!-- 네비게이션바 끝 -->
+    <div class="sub-navbar">
+      <div class="menu">
+        <ul>
+          <li><a href="#">Brand Story</a></li>
+          <li><a href="#">주요 기능</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">웨일 이용가이드</a></li>
+          <li><a href="#">마이 액티비티</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">확장앱</a></li>
+          <li><a href="#">배경테마</a></li>
+          <li><a href="#">개발자센터</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">연구소 홈</a></li>
+          <li><a href="#">베스트 연구</a></li>
+          <li><a href="#">버그바운티</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">제품 소개</a></li>
+          <li><a href="#">기능</a></li>
+          <li><a href="#">제휴 서비스</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">웨일북 소개</a></li>
+          <li><a href="#">웨일 OS</a></li>
+          <li><a href="#">디바이스 정보</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="download-btn"><a href="#">다운로드</a></div>
 
-    <!-- 메인 페이지 시작-->
-    <div class="main-wrap">
-      <div class="first-main-background">
-        <img
-          class="small-background cell-r"
-          src="https://whale.naver.com/_resource/img/main/top_rightimg_bg.png"
-          alt="" 
-        />
+  <!-- 네비게이션바 끝 -->
+
+  <!-- 메인 페이지 시작-->
+  <div class="main-wrap">
+    <div class="first-main-background">
+      <div class="inner-width">
+        <img class="small-background cell-r" src="https://whale.naver.com/_resource/img/main/top_rightimg_bg.png"
+          alt="" />
         <div class="content">
           <h3>
             일상은 인터넷이 아닌 <br />
@@ -129,197 +105,181 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="second-main-background">
-        <div class="slider-box">
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>시간 비용 걱정 없이<br />화상미팅은 <p>웨일온</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_01_on.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>필요한 기능은<br /><p>사이드바</p>로 바로 쓰고!</h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_01_sidebar.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>같이 보고 싶은 페이지는<br /><p>듀얼 탭</p>으로 한 눈에!</h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_02_duletab.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>궁금한 내용은 드래그하고<br />바로바로 <p>퀵서치!</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_01_quick.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>필요한 이미지는 브라우저<br />안에서 깔끔하게 <p>캡처!</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_01_capture.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          
-        </div>
-      </div>
-
-      <div class="third-main-background">
-        <div class="slider-box">
-          <div class="content">
-            <div class="text-box">
-              <h2>알아서 차단해주는<br />강력한 보안!</h2>
-              <h3>위조사이트 &<br />악성 프로그램 차단 <br><p>세이프 브라우징</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_02_safe.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>불필요한 광고 없이<br><p>클린 웹</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_02_clean.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
-              <h3>로그인 기기와 동기화를<br>한 눈에 <p>마이 액티비티</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_02_safe_03.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="fourth-main-background">
-        <div class="slider-box">
-          <div class="content">
-            <div class="text-box">
-              <h2>내 취향으로 가득한<br />취향 저격 브라우저</h2>
-              <h3>콘텐츠까지<br />눈부심없이 선명하게!<br><p>다크모드</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_03_dark.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>내 취향으로 가득한<br />취향 저격 브라우저</h2>
-              <h3>편리한 기능과 감성을 더하는<br /><p>위젯 & 배경화면</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_03_widget.gif"
-                alt=""
-              />
-            </div>
-          </div>
-          <div class="content">
-            <div class="text-box">
-              <h2>내 취향으로 가득한<br />취향 저격 브라우저</h2>
-              <h3>열어볼수록 마음에 쏙!<br /><p>인터페이스</p></h3>
-              <div class="btn">자세히보기 -></div>
-            </div>
-          </div>
-          <div class="content">
-            <div class="img-box">
-              <img
-                src="https://whale.naver.com/_resource/img/gif/ww_03_interface.gif"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="last-main-background">
+    <div class="second-main-background">
+      <div class="slider-box">
         <div class="content">
-          <img
-            src="https://whale.naver.com/_resource/img/gif/whywewhale.gif"
-            alt=""
-          />
-          <div class="btn">다운로드</div>
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>시간 비용 걱정 없이<br />화상미팅은 <p>웨일온</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_01_on.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>필요한 기능은<br />
+              <p>사이드바</p>로 바로 쓰고!
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_01_sidebar.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>같이 보고 싶은 페이지는<br />
+              <p>듀얼 탭</p>으로 한 눈에!
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_02_duletab.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>궁금한 내용은 드래그하고<br />바로바로 <p>퀵서치!</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_01_quick.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>필요한 이미지는 브라우저<br />안에서 깔끔하게 <p>캡처!</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_01_capture.gif" alt="" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="third-main-background">
+      <div class="slider-box">
+        <div class="content">
+          <div class="text-box">
+            <h2>알아서 차단해주는<br />강력한 보안!</h2>
+            <h3>위조사이트 &<br />악성 프로그램 차단 <br>
+              <p>세이프 브라우징</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_02_safe.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>불필요한 광고 없이<br>
+              <p>클린 웹</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_02_clean.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>오늘 해야 할 일을<br />더욱 빠르고 가볍게</h2>
+            <h3>로그인 기기와 동기화를<br>한 눈에 <p>마이 액티비티</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_02_safe_03.png" alt="" />
+          </div>
         </div>
       </div>
-      <div class="footer">
+    </div>
+
+    <div class="fourth-main-background">
+      <div class="slider-box">
+        <div class="content">
+          <div class="text-box">
+            <h2>내 취향으로 가득한<br />취향 저격 브라우저</h2>
+            <h3>콘텐츠까지<br />눈부심없이 선명하게!<br>
+              <p>다크모드</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_03_dark.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>내 취향으로 가득한<br />취향 저격 브라우저</h2>
+            <h3>편리한 기능과 감성을 더하는<br />
+              <p>위젯 & 배경화면</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_03_widget.gif" alt="" />
+          </div>
+        </div>
+        <div class="content">
+          <div class="text-box">
+            <h2>내 취향으로 가득한<br />취향 저격 브라우저</h2>
+            <h3>열어볼수록 마음에 쏙!<br />
+              <p>인터페이스</p>
+            </h3>
+            <div class="btn">자세히보기 -></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="img-box">
+            <img src="https://whale.naver.com/_resource/img/gif/ww_03_interface.gif" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="last-main-background">
+      <div class="content">
+        <img src="https://whale.naver.com/_resource/img/gif/whywewhale.gif" alt="" />
+        <div class="btn">다운로드</div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="inner-width">
         <div class="whale-logo">
           <img src="https://whale.naver.com/_resource/img/main/logo_whale_gray.svg" alt="">
         </div>
@@ -331,8 +291,12 @@
           <li>고객센터</li>
           <li>NAVER Corp</li>
         </ul>
-        <div class="beta-button"></div>
+        <div class="beta-download"><img src="https://whale.naver.com/_resource/img/main/beta.svg" alt="">베타 다운로드</div>
+        
       </div>
+      
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

@@ -2,25 +2,31 @@
   margin: 0;
   padding: 0;
 }
+
 h3 {
   font-size: 55px;
 }
+
 body {
-  margin-top:100px;
+  margin-top: 90px;
   font-family: "Noto Sans KR", sans-serif;
 }
+
 /* font-weight 적용 왜안되는지? */
 
 .con {
   width: 100%;
   margin: 0 auto;
 }
+
 .cell {
   float: left;
 }
+
 .cell-r {
   float: right;
 }
+
 .row::after {
   display: block;
   clear: both;
@@ -32,71 +38,90 @@ ul,
 li {
   list-style: none;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 .navbar-wrap {
-  width:100%;
+  width: 100%;
   position: fixed;
-  top:0px;
+  top: 0px;
   background-color: white;
-  z-index:5;
+  z-index: 5;
 }
+
 .navbar {
   width: 100%;
+  height: 90px;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #ddd;
   -webkit-box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.1);
   box-shadow: -1px 5px 14px 0px rgba(0, 0, 0, 0.1);
   /* 왜 적용안되는지? */
+  position: relative;
 }
-.navbar > .logo {
+
+.navbar>.logo {
   width: 200px;
-  height: 100px;
-  margin-left:20px;
+  height: 40px;
   box-sizing: border-box;
-  line-height: 110px;
+  position: absolute;
+  left: 6%;
+  top: 60%;
+  transform: translateY(-59%);
 }
-.navbar > .menu {
-  width: 70%;
+
+.navbar>.menu {
+  width: 53%;
   /* background:cyan; */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
-.navbar > .menu > ul {
+
+.navbar>.menu>ul {
   display: flex;
   justify-content: space-evenly;
-  text-align:center;
-  line-height: 100px;
+  text-align: center;
+  line-height: 90px;
 }
-.navbar > .menu > ul > li {
+
+.navbar>.menu>ul>li {
   width: 13%;
   /*   margin-right:20px; */
   font-size: 18px;
   /* background-color: pink; */
-  font-weight:bold;
+  font-weight: bold;
 }
-.navbar > .button {
+
+.navbar>.button {
   width: 150px;
-  line-height: 100px;
+  line-height: 90px;
+  position: absolute;
+  right: 3%;
 }
-.navbar > .button > a {
+
+.navbar>.button>a {
   color: #15c5aa;
-  font-size: 20px;
+  font-size: 18px;
   border: 1px solid #15c5aa;
-  padding: 10px 20px;
-  border-radius: 10px;
-  transition:0.5s;
+  padding: 10px 25px;
+  border-radius: 5px;
+  transition: 0.2s;
 }
-.navbar > .button > a:hover {
-  background-color:#15c5aa;
-  color:white;
+
+.navbar>.button>a:hover {
+  background-color: #15c5aa;
+  color: white;
 }
 
 
 .sub-navbar {
   position: absolute;
-  top: 100px;
+  top: 90px;
   width: 100%;
   z-index: 3;
   display: flex;
@@ -105,51 +130,48 @@ a {
   max-height: 0;
   overflow: hidden;
   transition: 1s;
+  color: #8a8a8a;
 }
+
 .sub-navbar.active {
   max-height: 200px;
 }
-.sub-navbar > .blankbox01 {
-  width: 200px;
-  margin-left:20px;
-  /* background: pink; */
-}
-.sub-navbar > .blankbox02 {
-  width: 150px;
-  /* background: red; */
-}
-.sub-navbar > .menu {
+
+.sub-navbar>.menu {
   display: flex;
   justify-content: space-evenly;
   font-size: 16px;
-  width: 70%;
-  /* background-color:cyan */
+  width: 53%;
+  margin: 0 auto;
 }
-.sub-navbar > .menu > ul {
+
+.sub-navbar>.menu>ul {
   width: 13%;
-  text-align:center;
-  padding:10px;
+  text-align: center;
+  padding: 10px;
 }
-.sub-navbar > .menu > ul > li{
-  padding:7px;
+
+.sub-navbar>.menu>ul>li {
+  padding: 7px;
 }
 
 
-.download-btn{
-  position:fixed;
-  z-index:3;
-  top:102px;
-  left:calc(50% - 110px);
-  width:220px;
-  height:70px;
+.download-btn {
+  position: fixed;
+  z-index: 3;
+  top: 90px;
+  left: calc(50% - 110px);
+  width: 220px;
+  height: 70px;
   background-image: url(https://whale.naver.com/_resource/img/guide/download_btn.png);
-  opacity:0;
+  opacity: 0;
 }
-.download-btn>a{
-  display:inline-block;
-  color:white;
-  padding:16px 20px 20px 100px;
-  font-size:24px;
+
+.download-btn>a {
+  display: inline-block;
+  color: white;
+  padding: 16px 20px 20px 100px;
+  font-size: 24px;
 }
 
 /* 네비게이션바 끝 */
@@ -162,111 +184,135 @@ a {
 
 /* 일상을 여는 새로운 시작, 네이버 웨일 */
 .first-main-background {
-  position: relative;
-  height: calc( 100vh - 100px );
+  width: 100%;
   background-image: url(https://whale.naver.com/_resource/img/main/top_bg.jpg);
 }
-.first-main-background > .content {
+
+.first-main-background>.inner-width {
+  max-width: 1600px;
+  height: calc(100vh - 90px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.first-main-background>.inner-width>.content {
   position: absolute;
   left: 3%;
   top: 50%;
   transform: translateY(-50%);
 }
-.first-main-background > .content > h3 > b{
-  color:#05d7b4
+
+.first-main-background>.inner-width>.content>h3>b {
+  color: #05d7b4
 }
-.first-main-background > .content > .button{
-  width:250px;
-  height:75px;
-  background-color:#05d7b4;
-  color:white;
-  border-radius:50px;
-  margin-top:50px;
-  font-size:24px;
+
+.first-main-background>.inner-width>.content>.button {
+  width: 250px;
+  height: 75px;
+  background-color: #05d7b4;
+  color: white;
+  border-radius: 50px;
+  margin-top: 50px;
+  font-size: 24px;
   text-align: center;
   line-height: 75px;
 }
-.first-main-background > .content > .button> img{
-  position:relative;
-  top:6px;
+
+.first-main-background>.inner-width>.content>.button>img {
+  position: relative;
+  top: 6px;
 }
-.first-main-background > .small-background {
-  position:absolute;
-  right:0;
-  max-height:90%;
-  background-size:cover;
+
+.first-main-background>.inner-width>.small-background {
+  position: absolute;
+  right: 0;
+  max-height: 90%;
+  background-size: cover;
   background-repeat: none;
 }
 
 /* 오늘 해야 할 일을 더욱 빠르고 가볍게 */
 .second-main-background {
-  height: calc( 100vh - 100px );
+  height: calc(100vh - 90px);
   background-image: url(https://whale.naver.com/_resource/img/main/tasking_bg.jpg);
 }
 
 .slider-box {
-  height: calc( 100vh - 100px );
+  height: calc(100vh - 90px);
+  margin: 0 auto;
+  max-width: 1600px;
 }
+
 .slider-box .content {
   width: 100%;
-  color:white;
+  color: white;
 }
-.slider-box > .slick-list {
+
+.slider-box>.slick-list {
   height: 100%;
 }
-.slider-box > .slick-list > .slick-track {
+
+.slider-box>.slick-list>.slick-track {
   height: 100%;
   position: relative;
 }
-.slider-box .content > .text-box {
+
+.slider-box .content>.text-box {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   /* background-color: red; */
   /* left 안되는 이유? margin-left로 대체 */
-  margin-left:50px;
-}
-.slider-box .content > .text-box p{
-  display:inline-block;
-  background-color:white;
-  padding-left:10px;
-  padding-right:10px;
-}
-.second-main-background>.slider-box .content > .text-box p{
-  color:#00b7bc;
+  margin-left: 50px;
 }
 
-.slider-box .content > .text-box h2{
-  color:rgb(255,255,255,0.8);
+.slider-box .content>.text-box p {
+  display: inline-block;
+  background-color: white;
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.slider-box .content > .img-box {
+
+.second-main-background>.slider-box .content>.text-box p {
+  color: #00b7bc;
+}
+
+.slider-box .content>.text-box h2 {
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.slider-box .content>.img-box {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   /* background-color: red; */
   /* left 안되는 이유? */
 }
-.slider-box .content > .img-box>img{
-    width:70%;
-    border-radius:25px;
-    margin-right:100px;
+
+.slider-box .content>.img-box>img {
+  width: 70%;
+  border-radius: 25px;
+  margin-right: 100px;
 }
 
 /* third */
 .third-main-background {
-  height: calc( 100vh - 100px );
+  height: calc(100vh - 90px);
   background-image: url(https://whale.naver.com/_resource/img/main/security_bg.jpg);
 }
-.third-main-background>.slider-box .content > .text-box p{
-  color:#058dec;
+
+.third-main-background>.slider-box .content>.text-box p {
+  color: #058dec;
 }
+
 /* fourth */
 .fourth-main-background {
-  height: calc( 100vh - 100px );
+  height: calc(100vh - 90px);
   background-image: url(https://whale.naver.com/_resource/img/main/interface_bg.jpg);
 }
-.fourth-main-background>.slider-box .content > .text-box p{
-  color:#454ccd;
+
+.fourth-main-background>.slider-box .content>.text-box p {
+  color: #454ccd;
 }
 
 
@@ -274,61 +320,95 @@ a {
 
 
 /* footer */
-.last-main-background{
-    width:100%;
-    height:450px;
-    position:relative;
-}
-.last-main-background>.content{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align: center;
+.last-main-background {
+  width: 100%;
+  height: 450px;
+  position: relative;
 }
 
-.last-main-background>.content>img{
-    width:70%
-}
-.last-main-background>.content>div{
-    width:200px;
-    padding:20px 10px;
-    background-color:#15c5aa;
-    border-radius:20px;
-    margin:0 auto;
+.last-main-background>.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.footer{
-  width:100%;
-  height:250px;
+.last-main-background>.content>img {
+  width: 70%
+}
+
+.last-main-background>.content>div {
+  width: 250px;
+  height: 75px;
+  background-color: #05d7b4;
+  color: white;
+  border-radius: 50px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 75px;
+  margin:0 auto;
+}
+
+.footer {
+  width: 100%;
+  height: 173px;
   background-color: #f9f9f9;
+  color: #c0c0c0
 }
-.footer > .whale-logo{
-  width:175px;
-  padding-top:70px;
-  padding-bottom:50px;
-  margin:0 auto;
+
+.footer>.inner-width {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
 }
-.footer > .item-box{
-  width:80%;
-  margin:0 auto;
-  display:flex;
+
+.footer>.inner-width>.whale-logo {
+  width: 141px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  margin: 0 auto;
+}
+
+.footer>.inner-width>.item-box {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
   text-align: center;
   justify-content: space-evenly;
 }
-.footer > .item-box > li{
-  position:relative;
+
+.footer>.inner-width>.item-box>li {
+  position: relative;
 }
-.footer > .item-box > li::after{
-  content:'';
-  display:block;
-  position:absolute;
-  top:3px;
-  right:-60px;
-  width:1px;
-  height:18px;
-  background:#dadada;
+
+.footer>.inner-width>.item-box>li::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 5px;
+  right: -26px;
+  width: 1px;
+  height: 18px;
+  background: #dadada;
 }
-.footer > .item-box > li:last-child::after{
-  display:none;
+
+.footer>.inner-width>.item-box>li:last-child::after {
+  display: none;
+}
+
+.footer>.inner-width>.beta-download {
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+
+.footer>.inner-width>.beta-download>img {
+  width: 22px;
+  position: relative;
+  top: 4px;
+  left: -2px;
 }
